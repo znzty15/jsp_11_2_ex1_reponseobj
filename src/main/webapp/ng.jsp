@@ -15,8 +15,8 @@
 		agestr = request.getParameter("age");
 		age = Integer.parseInt(agestr);
 	%>
-	<h1><%= age %>살 뿡뿡이는 우리홈페이지에 들어올수 없음</h1><br/>
-	어른이 되서 돌아오거라<br/>
+	<h3><%= age %>살 뿡뿡이는 우리홈페이지에 들어올수 없음</h3>
+	<h3>어른이 되서 돌아오거라</h3>
 	<a href="requestage.html">다시 돌아가~</a>
 </body>
 </html>
