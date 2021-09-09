@@ -1,3 +1,4 @@
+<%@page import="java.net.URLEncoder"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -8,14 +9,17 @@
 </head>
 <body>
 	<%! int age;
-		String agestr;
+		String agestr, name;
 	%>
 	
 	<%
+		name = request.getParameter("name");
+		String name2 = URLEncoder.encode(name,"EUC-KR");
 		agestr = request.getParameter("age");
 		age = Integer.parseInt(agestr);
+		
 	%>
-	<h1>당신의 나이는 <%= age %>세 입니다.<br/>홈페이지 입장이 가능합니다.</h1><br/>
-	<a href="requestage.html">나이 입력창으로 가기</a>	
+	<h1><%= name %>님의 나이는 <%= age %>세 입니다.<br/>홈페이지 입장이 가능합니다.</h1><br/>
+	<a href="requestage.html">나이 입력창으로 가기</a>
 </body>
 </html>
