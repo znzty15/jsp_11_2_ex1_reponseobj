@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>request_send.jsp</title>
 </head>
 <body>
 	<%! int age;
